@@ -1,4 +1,4 @@
-package io.dodn.springboot.storage.db.core
+package demo.core
 
 
 import org.hibernate.annotations.CreationTimestamp
