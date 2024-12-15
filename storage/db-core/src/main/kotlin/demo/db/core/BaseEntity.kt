@@ -1,10 +1,14 @@
-package io.dodn.springboot.storage.db.core
+package demo.db.core;
 
 
 import org.hibernate.annotations.CreationTimestamp
 import org.hibernate.annotations.UpdateTimestamp
 import java.time.LocalDateTime
-import javax.persistence.*
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
+import javax.persistence.Id
+import javax.persistence.MappedSuperclass
+import javax.persistence.Column
 
 @MappedSuperclass
 abstract class BaseEntity {
