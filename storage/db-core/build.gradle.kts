@@ -5,7 +5,9 @@ allOpen {
 }
 
 dependencies {
-    compileOnly(project(":domain"))
+    implementation(project(":domain"))
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     runtimeOnly("com.h2database:h2")
 }
+
+// storage 모듈이 domain 모듈의 구현체 역할이라고 보면 된다.
