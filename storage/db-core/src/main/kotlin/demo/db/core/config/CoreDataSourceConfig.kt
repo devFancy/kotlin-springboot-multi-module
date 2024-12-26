@@ -40,7 +40,6 @@ internal class CoreDataSourceConfig {
      * 여러 데이터 소스가 존재할 경우, `@Qualifier("coreHikariConfig")`를 사용하여 `coreHikariConfig` Bean을 명시적으로 주입받는다.
      */
     @Bean
-    @Primary
     fun coreDataSource(@Qualifier("coreHikariConfig") config: HikariConfig): HikariDataSource {
         return HikariDataSource(config)
     }
